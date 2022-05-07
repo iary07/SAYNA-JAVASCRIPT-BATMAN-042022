@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap');
+:root {
+    --primary-color-yellow: #FFFF00;
+    --primary-color-yellow2: #F8F184;
+    --primary-color-blue: #19587D;
+    --primary-color-black: #0D0E09;
+    --primary-color-red: #B11313;
+    --primary-color-white: #FFFFFF;
+    --primary-color-dark: #000000;
+    --primary-color-grey: #c4c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--primary-color-white);
+}
+
+.small {
+    margin: 0 7%;
+    font-size: 18px;
+}
+
+.phrase {
+    font-size: 18px;
+}
+
+.container {
+    border-left: 1px solid #BCBBBD;
+    border-right: 1px solid #BCBBBD;
+}
+
+header {
+    background: url(../Illustrations/Home/Bathome1.png) 50% 50%;
+    height: 900px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    color: var(--primary-color-white);
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.jeux {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.btn {
+    opacity: 0.7;
+    padding: 15px 70px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-white-color);
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(to bottom right, #EDDEBF 0%, #890008 100%);
+}
+
+.dessin {
+    filter: grayscale(1);
+}
+
+.anime {
+    filter: grayscale(0)
+}
+
+.lien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 5%;
+}
+
+.boss {
+    text-align: center;
+    word-spacing: 40px;
+}
+
+.man {
+    text-align: center;
+    word-spacing: 40px;
+}
+
+.conteneur {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phrase {
+    position: relative;
+    left: -1000px;
+}
+
+#batman {
+    background-color: var(--primary-color-dark);
+}
+
+.bastlider {
+    background: url('../Illustrations/Home/Batslider1.png');
+    height: 565px;
+}
+
+#popUpBox {
+    top: 20%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    display: none;
+    opacity: 0.7;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(-50%);
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
+}
+
+#closeBtn {
+    float: right;
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#msg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.media {
+    height: 750px;
+    position: relative;
+    background: linear-gradient(to bottom right, #47453d 0%, #0c202b 100%);
+}
+
+#voix,
+select,
+textarea {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #c4c4c4c4;
+    width: 400px;
+}
+
+.formulaire {
+    display: grid;
+    place-items: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+input[type="email"] {
+    width: 400px;
+    color: #C4C4C4;
+    border: transparent;
+    max-width: 800px;
+    background: transparent;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.radio {
+    padding: 10px 0px;
+    border-top: 1px solid #353232;
+    border-left: 1px solid #363434;
+    border-right: 1px solid #0c202b;
+    border-bottom: 1px solid #0c202b;
+}
+
+.radio__label {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__input:checked+.radio__label {
+    margin: 0px;
+    padding: 10px 30px;
+    background: linear-gradient(to bottom right, #EDDEBF 0%, #19587D 100%);
+}
